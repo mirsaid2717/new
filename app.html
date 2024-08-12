@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <div class="conic conic-demo">
+
+        <div class="about">
+            <h1>OQTEPA LAVASH</h1>
+            <p>Assalomu aleykum oqtepa sayitiga hush kelib siz</p>
+            <div class="controls">
+                <label for="radius">Radius:</label>
+                <input type="range" id="radius" name="radius" min="1" max="100" value="50">
+                <label for="angle">Angle:</label>
+                <input type="range" id="angle" name="angle" min="0" max="360" value="45">
+            </div>
+
+        </div>
+        <div class="conic-container">
+            <svg id="conic">
+                <defs>
+                    <filter id="glow">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                        <feMerge>
+                            <feMergeNode in="SourceGraphic" />
+                            <feMergeNode in="glow" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <circle cx="50%" cy="50%" r="50%" fill="transparent" stroke="black" stroke-width="2"
+                    filter="url(#glow)" />
+                <circle cx="50%" cy="50%" r="45%" fill="transparent" stroke="black" stroke-width="2" />
+                <circle cx="50%" cy="50%" r="40%" fill="transparent" stroke="black" stroke-width="2" />
+                <circle cx="50%" cy="50%" r="35%" fill="transparent" stroke="black" stroke-width="2" />
+            </svg>
+            <div class="img">
+                <div><img class="img1" src="img/images.jpg" alt=""></div>
+                <div><img class="img1" src="img/images (1).jpg" alt=""></div>
+            </div>
+            <svg id="conic1">
+                <defs>
+                    <filter id="glow">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="2" />
+                        <feMerge>
+                            <feMergeNode in="SourceGraphic" />
+                            <feMergeNode in="glow" />
+                        </feMerge>
+                    </filter>
+                </defs>
+                <circle cx="50%" cy="50%" r="50%" fill="transparent" stroke="black" stroke-width="2"
+                    filter="url(#glow)" />
+                <circle cx="50%" cy="50%" r="45%" fill="transparent" stroke="black" stroke-width="2" />
+                <circle cx="50%" cy="50%" r="40%" fill="transparent" stroke="black" stroke-width="2" />
+                <circle cx="50%" cy="50%" r="35%" fill="transparent" stroke="black" stroke-width="2" />
+            </svg>
+        </div>
+        <div class="contact">
+            <div class="box">
+                <h2>Kontakni kiritig</h2>
+                <form class="from" action="">
+                    <div class="bot">
+                        <input type="text" name="name" placeholder="Ismingiz" required>
+                        <input type="email" name="email" placeholder="Elektron pochta" required>
+                        <textarea name="message" placeholder="Mesajingiz" required></textarea>
+                        <button class="btn" type="submit">Botga habar berish</button>
+                        <li><a href="https://t.me/kimlaryoq_bot"><i class="fa-brands fa-telegram"
+                                    style="color: #00bfff;">Telegram_Bot</i></a></li>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <p>🌯 2024 Oqtepa lavash. Biznesimizga o'z qo'llanma va xizmatlarni ko'rib chiqish uchun +998 99 999 9999
+            </p>
+        </div>
+
+        <div class="imglar">
+            <img src="img/oqtepa_1.jpg" alt="">
+            <img src="img/oqtepa_2.jpg" alt="">
+            <img src="img/oqtepa_3.jpg" alt="">
+            <img src="img/oqtepa_4.jpg" alt="">
+            <img src="img/imglar_5.jpg" alt="">
+            <img src="img/oqtepa_6.jpg" alt="">
+            <img src="img/oqtepa_7.jpg" alt="">
+            <img src="img/L_height.webp" alt="">
+            <img src="img/imglar_11.jpg" alt="">
+            <img src="img/oqtepa_10.jpg" alt="">
+            <img src="img/oqtepa_9.jpg" alt="">
+            <img src="img/oqtepa_12.jpg" alt="">
+        </div>
+
+        <div class="text">
+            <p class="p_text">
+                Oqtepa Lavash сейчас здесь: Oqtepa Lavash.
+                24 сентябрь 2021 г. ·
+                Oq-Tepa Lavash] dagi iliq va shinam muhitni hatto smartfon ekrani orqali ham his etish mumkin 😌
+                Biroq, filiallardan biriga albatta kirib o'tib, undan to'la-to'kis zavq olinish, shuningdek, issiqqina
+                lavash yoki gamburgerdan tanovvul qilish albatta yanada yaxshiroqdir 🌯🍔
+                Aziz mehmonimiz bo'ling! 🙌
+            </p>
+        </div>
+
+        <footer class="conic">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="https://oqtepalavash.uz/">Menyu</a></li>
+                    <li><a href="https://oqtepalavash.uz/about">Biz haqimizda</a></li>
+                    <li><a href="https://oqtepalavash.uz/branches">Filialar</a></li>
+                    <li><a href="https://oqtepalavash.uz/contacts">Kontaktlar</a></li>
+                    <li><a href="https://t.me/kimlaryoq_bot">OQTEPA_botga murojad qilsh</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://t.me/kimlaryoq_bot"><i class="fa-brands fa-telegram"
+                                style="color: #00bfff;">Telegram</i></a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://www.instagram.com/oqtepalavashuz/"><i class="fa-brands fa-square-instagram"
+                                style="color: #dd2a73;"></i></a></li>
+                    <li><a href="https://www.facebook.com/oqtepalavashuz/"><i class="fa-brands fa-square-facebook"
+                                style="color: #0400ff;"></i></a></li>
+                    <li><a href="https://oqtepalavash.uz/"><i class="fa-brands fa-square-twitter"
+                                style="color: #00ffe1;"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCJrIVuDoP0djk7kQ4aHKwXw"><i
+                                class="fa-brands fa-youtube" style="color: #ff0000;"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p class="p">OQTEPA QAQIDA QIZIQARLI MALUMOT</p>
+                <hr>
+                <p class="p1">Oqtepa – bu O‘zbekistonning Toshkent viloyatida joylashgan bir qishloq. Ushbu qishloqning
+                    qiziqarli jihatlari haqida bir necha ma'lumotlarni taqdim etaman:
+
+                    1. **Geografiya**: Oqtepa Toshkent shahridan taxminan 30 kilometr uzoqlikda joylashgan. U Toshkent
+                    viloyatining bo‘ysunishidagi tumanlardan birida, ya'ni Qibray tumanida.
+
+                    2. **Madaniyat va Tarix**: Oqtepa qishlog‘i, bu hududdagi xalqning an'analari va urf-odatlarini
+                    saqlab kelmoqda. Qishloqdagi odamlar ko‘pincha o‘zlarining tarixiy meroslarini va madaniy
+                    boyliklarini saqlashga katta e'tibor berishadi.
+                    3. **Tabiat**: Oqtepa atrofidagi tabiat juda go‘zaldir. Qishloqning atrofida yashil dalalar va
+                    tepaliklar mavjud, bu esa sayyohlar va tabiatni sevuvchilar uchun yaxshi joy.
+
+                    4. **Iqtisodiyot**: Qishloqda asosan qishloq xo‘jaligi rivojlangan. Mahalliy aholi sabzavotchilik,
+                    polizchilik va chorvachilik bilan shug‘ullanadi. Boshqa iqtisodiy faoliyatlar ham mavjud, lekin
+                    qishloq xo‘jaligi yetakchi o‘rinni egallaydi.
+
+                    5. **Madaniy Tadbirlar**: Oqtepa va uning atrofida turli madaniy tadbirlar o‘tkaziladi. Mahalliy
+                    bayramlar, festivallar va an'anaviy tadbirlar qishloq hayotining muhim qismidir.
+
+                    Oqtepa qishlog‘i bu yerdagi xalqning madaniyati, urf-odatlari va tabiati bilan juda boy. Agar siz bu
+                    qishloq haqida batafsilroq ma'lumot olishni xohlasangiz, sizni bu yerga borishga va bevosita tajriba
+                    qilishga taklif qilaman!
+
+                    Oqtepa qishlog‘i haqida qo‘shimcha ma'lumot:
+
+                    1. **Qishloq Ahli**: Oqtepa aholisining asosan o‘zbeklar tashkil etadi, ammo qishloqda boshqa millat
+                    vakillari ham mavjud. Ularning ko‘pchiligi o‘zbek milliy urf-odatlari va madaniyatini saqlashga
+                    harakat qiladi.
+
+                    2. **Ta'lim**: Qishloqda o‘rta ta'lim muassasalari mavjud. O‘quvchilar uchun maktablar mavjud
+                    bo‘lib, ular ta'lim va tarbiya olish uchun kerakli sharoitlarni taqdim etadi.
+
+                    3. **Sog‘liqni Saqlash**: Oqtepada kichik tibbiyot punktlari va shifoxonalar mavjud bo‘lib, ular
+                    qishloq aholisi uchun asosiy tibbiy xizmatlarni taqdim etadi. Kattaroq tibbiy yordam kerak
+                    bo‘lganda, odamlar Toshkent shahriga murojaat qilishlari mumkin.
+
+                    4. **Infrastruktur**: Qishloqda asosiy infratuzilma mavjud bo‘lib, yo‘llar, elektr ta'minoti va suv
+                    ta'minoti kabi xizmatlar mavjud. Ammo, ayrim infratuzilma masalalari hali ham rivojlanish bosqichida
+                    bo‘lishi mumkin.
+
+                    5. **Mahalliy Biznes**: Oqtepada kichik bizneslar, savdo nuqtalari va xizmat ko‘rsatish joylari
+                    mavjud. Mahalliy tadbirkorlar qishloq aholisining ehtiyojlarini qondirish uchun turli xizmatlarni
+                    taqdim etadilar.
+
+                    6. **An'anaviy Hunarmandchilik**: Qishloqda ba'zi an'anaviy hunarmandchilik turlari saqlanib qolgan
+                    bo‘lishi mumkin. Masalan, to‘qimachilik, teri ishlov berish yoki boshqa hunarmandchilik turlari
+                    bilan shug‘ullanish.
+
+                    7. **Mahalliy Festival va Bayramlar**: Qishloqda mahalliy bayramlar va festivallar o‘tkaziladi. Bu
+                    tadbirlar qishloqning madaniy hayoti va an'analari bilan tanishish imkonini beradi.
+
+                    Agar sizga Oqtepaga sayohat qilish yoki qo‘shimcha ma'lumot olish haqida savollar bo‘lsa, men yordam
+                    berishga tayyorman!
+
+
+                    Oqtepa qishlog‘i haqida qo‘shimcha ma'lumot:
+
+                    1. **Qishloq Ahli**: Oqtepa aholisining asosan o‘zbeklar tashkil etadi, ammo qishloqda boshqa millat
+                    vakillari ham mavjud. Ularning ko‘pchiligi o‘zbek milliy urf-odatlari va madaniyatini saqlashga
+                    harakat qiladi.
+
+                    2. **Ta'lim**: Qishloqda o‘rta ta'lim muassasalari mavjud. O‘quvchilar uchun maktablar mavjud
+                    bo‘lib, ular ta'lim va tarbiya olish uchun kerakli sharoitlarni taqdim etadi.
+
+                    3. **Sog‘liqni Saqlash**: Oqtepada kichik tibbiyot punktlari va shifoxonalar mavjud bo‘lib, ular
+                    qishloq aholisi uchun asosiy tibbiy xizmatlarni taqdim etadi. Kattaroq tibbiy yordam kerak
+                    bo‘lganda, odamlar Toshkent shahriga murojaat qilishlari mumkin.</p>
+                <hr>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
